@@ -1,4 +1,7 @@
-node_modules
-dist/
+.sass-cache
 .tmp
-app.yaml
+.publish
+dist
+_sandbox
+.DS_Store
+node_modules
