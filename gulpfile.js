@@ -21,6 +21,7 @@ var del = require('del');
 var exclude = require('gulp-ignore').exclude;
 var fs = require('fs');
 var gulp = require('gulp');
+var htmlMin = require('gulp-htmlmin');
 var merge = require('merge-stream');
 var path = require('path');
 var reload = browserSync.reload;
@@ -108,7 +109,7 @@ gulp.task('html', function () {
       'app/*.html',
     ])
     .pipe(gulp.dest('.tmp'))
-    .pipe($.if('*.html', $.minifyHtml()))
+    .pipe($.if('*.html', htmlMin()))
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'html'}));
 });
