@@ -1,11 +1,1 @@
-$(document).ready(function() {
-
-  // Show my email address
-  var $emailLinks = $('.email.obfuscated');
-  if ($emailLinks.data('email')) {
-    var obfuscated = $emailLinks.data('email');
-    $emailLinks.attr('href', 'mailto:' + obfuscated
-          .replace(/ /, '@')
-          .replace(/ /, '.'));
-  }
-});
+!function a(i,u,f){function c(e,r){if(!u[e]){if(!i[e]){var t="function"==typeof require&&require;if(!r&&t)return t(e,!0);if(l)return l(e,!0);var n=new Error("Cannot find module '"+e+"'");throw n.code="MODULE_NOT_FOUND",n}var o=u[e]={exports:{}};i[e][0].call(o.exports,function(r){return c(i[e][1][r]||r)},o,o.exports,a,i,u,f)}return u[e].exports}for(var l="function"==typeof require&&require,r=0;r<f.length;r++)c(f[r]);return c}({1:[function(r,e,t){$(document).ready(function(){var r=$(".email.obfuscated");if(r.data("email")){var e=r.data("email");r.attr("href","mailto:"+e.replace(/ /,"@").replace(/ /,"."))}})},{}]},{},[1]);
