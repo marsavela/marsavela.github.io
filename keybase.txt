@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/smarsave
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://marsave.la
+  * I am smarsave (https://keybase.io/smarsave) on keybase.
+  * I have a public key ASC-hY7j28r5ZnDv31bEt3RFiWVC2_1Lys0xA-xTM3atiAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206844b0aca5afb5cbb5459fbaab4045b4cd63c5b842aebb514bc698e7dcb423bd0a",
+      "host": "keybase.io",
+      "kid": "0120be858ee3dbcaf96670efdf56c4b77445896542dbfd4bcacd3103ec533376ad880a",
+      "uid": "9efa6102a9cc4e61cfa4c66c5cde0019",
+      "username": "smarsave"
+    },
+    "merkle_root": {
+      "ctime": 1582480500,
+      "hash": "3ebafe1fee14e123cf0700fb25f499f5ea65452c3285a8c1cb32d836b71bac682e57c9f011c4707ebc62d23c185ecb23f79374140ff9ae7ae883d86cc5f8b930",
+      "hash_meta": "a1a052232d362647ef9131903ff875e0f538c689a2b5f4849c6c69452490af00",
+      "seqno": 14708834
+    },
+    "service": {
+      "entropy": "Xti4sTUjpU3PuHEjZ3Sr0/mp",
+      "hostname": "marsave.la",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1582480529,
+  "expire_in": 504576000,
+  "prev": "9ec379d1c9d2dbd8eadbe3116dfc106b93f0e7b67d243a684b5b713549eefe71",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvoWO49vK+WZw799WxLd0RYllQtv9S8rNMQPsUzN2rYgKp3BheWxvYWTESpcCMMQgnsN50cnS29jq2+MRbfwQa5Pw57Z9JDpoS1txNUnu/nHEIMqppFtq2fwf9c0NHLKoJUYo5jkHlCuvOyvhGu+0XwUxAgHCo3NpZ8RAYFFmuXnmTKzCP0t/yniQgUkrY/4xNBd0gLPw1aoV0IwLKVJupheBu2nu5vj1+AGjjykG7mmYO1d6NVw23AyODahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHWR8T/N0A7McLgHTW9TtH+gCEWzmX+IhQSkuAgSPNUho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/smarsave
+
+==================================================================
