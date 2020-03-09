@@ -36,27 +36,6 @@ function errorHandler(error) {
   this.emit('end'); // http://stackoverflow.com/questions/23971388
 }
 
-
-// Lint JavaScript
-gulp.task('js', function() {
-  var streams = [];
-  if (fs.existsSync('app/')) {
-    fs.readdirSync('app/').forEach(file => {
-      if (file.match(/^[^_].+\.js$/)) {
-        streams.push(browserify('app/' + file)
-            .bundle()
-            .pipe(source(file))
-            .pipe(buffer())
-            .pipe(gulp.dest('.tmp/'))
-            .pipe($.uglify())
-            .pipe(gulp.dest('dist/')));
-      }
-    });
-  }
-
-  return merge(streams);
-});
-
 // Optimize Images
 gulp.task('media', function () {
   var stream = gulp.src('app/images/**/*')
@@ -122,7 +101,7 @@ gulp.task('clean', function(cb) {
 });
 
 // Watch Files For Changes & Reload
-gulp.task('serve', gulp.series('styles', 'js', 'html', function () {
+gulp.task('serve', gulp.series('styles', 'html', function () {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -136,14 +115,13 @@ gulp.task('serve', gulp.series('styles', 'js', 'html', function () {
 
   gulp.watch('app/*.html', gulp.series('html', reload));
   gulp.watch('app/*.{scss,css}', gulp.series('styles', reload));
-  gulp.watch('app/*.js', gulp.series('js', reload));
   gulp.watch('app/images/**/*', gulp.series(reload));
 }));
 
 // Build Production Files, the Default Task
 gulp.task('default', gulp.series('clean', function (cb) {
   runSequence('styles',
-      gulp.series('js', 'html', 'media', 'copy'),
+      gulp.series('html', 'media', 'copy'),
       cb);
 }));
 
